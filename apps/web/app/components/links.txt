@@ -1,0 +1,9 @@
+https://github.com/codebyNJ/DevMe
+https://github.com/codebyNJ/Aruvi
+https://github.com/codebyNJ/Enhanced-Multi-Judge-AI-System
+https://github.com/codebyNJ/offyai
+https://github.com/codebyNJ/voiceai
+https://github.com/codebyNJ/Ferbile-Seziure
+
+Live link: https://aruvi.vercel.app/
+Live link: https://offyai.netlify.app/

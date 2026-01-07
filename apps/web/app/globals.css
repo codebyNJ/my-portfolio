@@ -2,25 +2,84 @@
 @import "@repo/tailwind-config";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --bg-main: #0a0a0a;
+  --bg-card: #111111;
+  --accent: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+  --border-color: #222222;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.serif-italic {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.notion-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.notion-card:hover {
+  border-color: #444444;
+  background: #161616;
+}
+
+.nature-gradient {
+  background: linear-gradient(to top, var(--bg-main) 10%, transparent 100%);
+}
+
+.tech-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  font-size: 15px;
+  font-weight: 500;
+  transition: border-color 0.2s;
+}
+
+.tech-pill:hover {
+  border-color: #444444;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+
+.sharp {
+  border-radius: 0 !important;
+}
+
+/* Section heading style - Notion-like */
+.section-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
