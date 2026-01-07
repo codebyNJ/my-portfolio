@@ -1,4 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "version": 2
+  "buildCommand": "npm --workspace=@repo/ui run build && npx turbo run build --filter=docs...",
+  "installCommand": "npm install"
 }
