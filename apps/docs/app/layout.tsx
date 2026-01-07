@@ -1,4 +1,3 @@
-import "@repo/ui/styles.css";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Instrument_Sans, Instrument_Serif } from "next/font/google";
